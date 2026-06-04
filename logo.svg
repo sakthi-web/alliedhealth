@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 200" width="820" height="200">
+  <defs>
+    <!-- Ring gradient: white top → light blue bottom -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#90caf9"/>
+    </linearGradient>
+    <!-- Figure gradient: white to light blue -->
+    <linearGradient id="figGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#90caf9"/>
+    </linearGradient>
+    <!-- Tagline gradient: light blue shades -->
+    <linearGradient id="tagGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e3f2fd"/>
+      <stop offset="100%" stop-color="#90caf9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="url(#ringGrad)" stroke-width="7"/>
+  <!-- Very subtle inner tint -->
+  <circle cx="100" cy="100" r="82" fill="#ffffff" fill-opacity="0.06"/>
+
+  <!-- Spine dots -->
+  <circle cx="82" cy="44"  r="5.8" fill="#ffffff"/>
+  <circle cx="82" cy="58"  r="5.2" fill="#ffffff"/>
+  <circle cx="82" cy="71"  r="4.7" fill="#e3f2fd"/>
+  <circle cx="82" cy="83"  r="4.2" fill="#e3f2fd"/>
+  <circle cx="82" cy="94"  r="3.7" fill="#bbdefb"/>
+  <circle cx="82" cy="104" r="3.2" fill="#bbdefb"/>
+  <circle cx="82" cy="113" r="2.8" fill="#90caf9"/>
+  <circle cx="82" cy="121" r="2.4" fill="#90caf9"/>
+  <circle cx="82" cy="128" r="2.0" fill="#90caf9"/>
+
+  <!-- Human figure -->
+  <circle cx="112" cy="34" r="12" fill="url(#figGrad)"/>
+  <path d="M106 46 Q100 62 98 82 Q97 102 103 118"
+        stroke="url(#figGrad)" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+  <path d="M104 68 Q116 56 132 48"
+        stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M104 68 Q94 76 80 80"
+        stroke="#90caf9" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M103 118 Q98 138 93 158"
+        stroke="url(#figGrad)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M103 118 Q110 138 116 156"
+        stroke="url(#figGrad)" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Vertical divider -->
+  <line x1="206" y1="20" x2="206" y2="180"
+        stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.35"/>
+
+  <!-- ALLIED HEALTH — white -->
+  <text x="224" y="82"
+    font-family="'Arial Black', 'Franklin Gothic Heavy', 'Arial', sans-serif"
+    font-size="64" font-weight="900" letter-spacing="1.5"
+    fill="#ffffff">ALLIED HEALTH</text>
+
+  <!-- PHYSIOTHERAPY SERVICES LTD. — light blue -->
+  <text x="225" y="126"
+    font-family="'Arial Black', 'Franklin Gothic Heavy', 'Arial', sans-serif"
+    font-size="44" font-weight="900" letter-spacing="0.8"
+    fill="#90caf9">PHYSIOTHERAPY SERVICES LTD.</text>
+
+  <!-- Tagline — very light blue -->
+  <text x="226" y="154"
+    font-family="'Arial', Helvetica, sans-serif"
+    font-size="17.5" font-weight="700" letter-spacing="2.8"
+    fill="url(#tagGrad)">PROFESSIONAL  &#x25CF;  EVIDENCE-BASED  &#x25CF;  COMPASSIONATE</text>
+
+  <!-- ECG line — white, subtle -->
+  <line x1="226" y1="174" x2="430" y2="174" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.25"/>
+  <polyline
+    points="430,174 442,174 448,160 455,188 461,168 467,180 473,174 486,174"
+    stroke="#90caf9" stroke-width="2.2" fill="none"
+    stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="486" y1="174" x2="812" y2="174" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.25"/>
+
+</svg>
