@@ -1,0 +1,1057 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rapid Rehab At Home — Specialist Home Physiotherapy</title>
+<meta name="description" content="Hospital-grade home physiotherapy for Neurology, Orthopaedics & Elderly Care. Reclaim your independence — comfortably at home." />
+<link rel="icon" href="rapid-rehab-emblem.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --rr-navy:#0b3b6f;--rr-blue:#1366c4;--rr-blue-soft:#e7f1ff;
+    --rr-teal:#0aa192;--rr-green:#1f9d6b;--rr-green-soft:#e6f7ef;
+    --rr-ink:#0f1b2d;--rr-muted:#5a6b80;--rr-line:#e6ecf3;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:#fff;color:var(--rr-ink);font-family:'Manrope',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:clip}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  .font-display{font-family:'Fraunces',Georgia,serif;letter-spacing:-.02em}
+  .container{max-width:1200px;margin:0 auto;padding:0 16px}
+  @media(min-width:640px){.container{padding:0 20px}}
+  @media(min-width:1024px){.container{padding:0 32px}}
+  .gradient-text{background:linear-gradient(95deg,var(--rr-navy) 0%,var(--rr-blue) 40%,var(--rr-teal) 75%,var(--rr-green) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .bg-mesh{background-image:radial-gradient(ellipse 60% 50% at 0% 0%,rgba(19,102,196,.10),transparent 60%),radial-gradient(ellipse 50% 50% at 100% 10%,rgba(10,161,146,.12),transparent 55%),radial-gradient(ellipse 50% 50% at 50% 100%,rgba(31,157,107,.08),transparent 60%)}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:14px;cursor:pointer;border:0;transition:transform .2s ease,box-shadow .2s ease,filter .2s ease;text-align:center;justify-content:center}
+  @media(min-width:640px){.btn{padding:14px 28px;font-size:15px}}
+  .btn-primary{background:linear-gradient(95deg,var(--rr-blue) 0%,var(--rr-teal) 100%);color:#fff;box-shadow:0 10px 25px -10px rgba(19,102,196,.55)}
+  .btn-primary:hover{transform:translateY(-2px);filter:brightness(1.05);box-shadow:0 18px 32px -12px rgba(10,161,146,.55)}
+  .btn-outline{border:1.5px solid var(--rr-navy);color:var(--rr-navy);background:#fff}
+  .btn-outline:hover{background:var(--rr-navy);color:#fff;transform:translateY(-2px)}
+  .chip{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;background:var(--rr-blue-soft);color:var(--rr-navy);font-weight:600;font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+  .chip-green{background:var(--rr-green-soft);color:var(--rr-green)}
+  .card{background:#fff;border:1px solid var(--rr-line);border-radius:18px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+  .card:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(11,59,111,.35);border-color:rgba(19,102,196,.35)}
+  .input{width:100%;border:1.5px solid var(--rr-line);border-radius:12px;padding:12px 14px;font-size:15px;background:#fff;color:var(--rr-ink);font-family:inherit;transition:border-color .18s ease,box-shadow .18s ease}
+  .input:focus{outline:0;border-color:var(--rr-blue);box-shadow:0 0 0 4px rgba(19,102,196,.12)}
+  .label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--rr-muted);display:block;margin-bottom:8px}
+  /* Header */
+  header.nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--rr-line)}
+  .nav-inner{min-height:72px;padding:8px 0;display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .brand{display:flex;align-items:center;gap:10px;min-width:0}
+  .brand img{height:46px;width:auto;object-fit:contain;flex-shrink:0}
+  .brand .name{font-family:'Fraunces',serif;font-weight:700;font-size:20px;line-height:1;letter-spacing:-.01em;white-space:nowrap}
+  .brand .sub{font-size:10px;letter-spacing:.2em;color:var(--rr-muted);text-transform:uppercase;margin-top:4px;font-weight:600}
+  @media(min-width:768px){.nav-inner{min-height:88px;gap:16px}.brand{gap:14px}.brand img{height:64px}.brand .name{font-size:26px}.brand .sub{font-size:11px;letter-spacing:.22em}}
+  @media(min-width:1024px){.nav-inner{min-height:96px}.brand img{height:78px}.brand .name{font-size:30px}.brand .sub{font-size:12px}}
+  /* Mobile menu */
+  .menu-btn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;border:1px solid var(--rr-line);background:#fff;cursor:pointer;color:var(--rr-navy)}
+  @media(min-width:768px){.menu-btn{display:none}}
+  .mobile-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(255,255,255,.98);backdrop-filter:blur(14px);z-index:50;padding:20px;flex-direction:column}
+  .mobile-nav.open{display:flex}
+  .mobile-nav-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px}
+  .mobile-nav-links{display:flex;flex-direction:column;gap:8px;font-size:18px;font-weight:600}
+  .mobile-nav-links a{padding:14px 16px;border-radius:12px;color:var(--rr-ink);transition:background .15s}
+  .mobile-nav-links a:hover{background:var(--rr-blue-soft);color:var(--rr-navy)}
+  .mobile-nav-cta{margin-top:auto;display:flex;flex-direction:column;gap:10px}
+  nav.links{display:none;gap:24px;font-size:14px;font-weight:600}
+  nav.links a{position:relative;padding:6px 2px;transition:color .2s ease}
+  nav.links a::after{content:'';position:absolute;left:0;right:0;bottom:-2px;height:2px;background:linear-gradient(95deg,var(--rr-blue),var(--rr-teal));border-radius:2px;transform:scaleX(0);transform-origin:left center;transition:transform .25s ease}
+  nav.links a:hover{color:var(--rr-blue)}
+  nav.links a:hover::after{transform:scaleX(1)}
+  nav.links a.active-nav{color:var(--rr-blue)}
+  nav.links a.active-nav::after{transform:scaleX(1)}
+  .call-btn{display:none !important}
+  @media(min-width:1024px){nav.links{display:flex}.call-btn{display:inline-flex !important}}
+  @media(min-width:1280px){nav.links{gap:32px}}
+  /* Mobile drawer active state */
+  .mobile-nav-links a.active-nav{background:var(--rr-blue-soft);color:var(--rr-navy)}
+  /* Hero */
+  .hero{position:relative;overflow:hidden;padding:40px 0 60px}
+  .hero-grid{display:grid;gap:32px;align-items:center}
+  @media(min-width:768px){.hero{padding:56px 0 80px}}
+  @media(min-width:1024px){.hero{padding:80px 0 120px}.hero-grid{grid-template-columns:1fr 1fr;gap:60px}}
+  h1.hero-title{font-family:'Fraunces',serif;font-size:32px;line-height:1.1;margin:18px 0 0;letter-spacing:-.02em}
+  @media(min-width:640px){h1.hero-title{font-size:44px;line-height:1.05}}
+  @media(min-width:1024px){h1.hero-title{font-size:60px}}
+  .hero-sub{margin-top:18px;font-size:15px;line-height:1.6;color:var(--rr-muted);max-width:520px}
+  @media(min-width:640px){.hero-sub{font-size:17px;margin-top:20px}}
+  @media(min-width:1024px){.hero-sub{font-size:19px;margin-top:24px}}
+  .hero-cta{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}
+  .hero-cta .btn{flex:1 1 auto;min-width:0}
+  @media(min-width:640px){.hero-cta{gap:16px;margin-top:36px}.hero-cta .btn{flex:0 1 auto}}
+  .hero-trust{margin-top:28px;display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--rr-muted)}
+  @media(min-width:640px){.hero-trust{margin-top:36px;gap:24px;font-size:14px}}
+  .hero-trust span{display:inline-flex;align-items:center;gap:8px}
+  .hero-img-wrap{position:relative}
+  .hero-img-glow{position:absolute;inset:-12px;border-radius:24px;background:linear-gradient(135deg,var(--rr-blue-soft),#fff,var(--rr-green-soft));filter:blur(32px);opacity:.8}
+  .hero-img-card{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--rr-line);box-shadow:0 24px 50px -28px rgba(11,59,111,.35)}
+  .hero-img{width:100%;height:300px;object-fit:cover;transition:opacity .6s ease}
+  @media(min-width:480px){.hero-img{height:380px}}
+  @media(min-width:1024px){.hero-img{height:520px;border-radius:24px}}
+  .hero-overlay{pointer-events:none;position:absolute;left:0;right:0;bottom:0;height:120px;background:linear-gradient(to top,rgba(0,0,0,.45),transparent)}
+  .hero-controls{position:absolute;left:0;right:0;bottom:0;padding:14px;display:flex;align-items:end;justify-content:space-between}
+  @media(min-width:640px){.hero-controls{padding:20px}}
+  .hero-btn{background:rgba(255,255,255,.9);color:var(--rr-navy);border:0;border-radius:999px;padding:8px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:background .2s}
+  @media(min-width:640px){.hero-btn{padding:10px}}
+  .hero-btn:hover{background:#fff}
+  .hero-dots{display:flex;gap:8px}
+  .hero-dot{height:6px;width:12px;background:rgba(255,255,255,.6);border:0;border-radius:999px;cursor:pointer;transition:all .3s}
+  .hero-dot.active{width:32px;background:#fff}
+  .float-card{display:none;position:absolute;left:-16px;bottom:32px;background:#fff;border:1px solid var(--rr-line);border-radius:16px;padding:14px 18px;box-shadow:0 20px 40px -20px rgba(11,59,111,.35);align-items:center;gap:12px}
+  @media(min-width:1024px){.float-card{display:inline-flex}}
+  /* Sections */
+  section{padding:56px 0}
+  @media(min-width:768px){section{padding:72px 0}}
+  @media(min-width:1024px){section{padding:96px 0}}
+  h2.section-title{font-family:'Fraunces',serif;font-size:28px;line-height:1.15;margin:14px 0 0;letter-spacing:-.02em}
+  @media(min-width:640px){h2.section-title{font-size:34px}}
+  @media(min-width:1024px){h2.section-title{font-size:44px;line-height:1.1}}
+  .section-sub{margin-top:14px;color:var(--rr-muted);font-size:15px;line-height:1.6}
+  @media(min-width:1024px){.section-sub{font-size:16px;margin-top:16px}}
+  /* Services */
+  .services-grid{margin-top:40px;display:grid;gap:18px;grid-template-columns:1fr}
+  @media(min-width:768px){.services-grid{margin-top:48px;gap:20px;grid-template-columns:1fr 1fr}}
+  @media(min-width:1024px){.services-grid{margin-top:56px;gap:24px;grid-template-columns:1fr 1fr 1fr}}
+  .svc-card{padding:24px}
+  @media(min-width:1024px){.svc-card{padding:28px}}
+  .svc-icon{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:24px;color:#fff;box-shadow:0 10px 25px -10px rgba(0,0,0,.2)}
+  .svc-icon.neuro{background:linear-gradient(135deg,#0b3b6f,#1366c4)}
+  .svc-icon.ortho{background:linear-gradient(135deg,#1366c4,#0aa192)}
+  .svc-icon.elderly{background:linear-gradient(135deg,#0aa192,#1f9d6b)}
+  .svc-title{font-family:'Fraunces',serif;font-size:24px;margin:0}
+  .svc-conditions{margin-top:8px;color:var(--rr-blue);font-weight:600;font-size:14px}
+  .svc-text{margin-top:16px;color:var(--rr-muted);font-size:15px;line-height:1.6}
+  .svc-link{margin-top:24px;display:inline-flex;align-items:center;gap:6px;color:var(--rr-navy);font-weight:600;font-size:14px;transition:color .2s}
+  .svc-link:hover{color:var(--rr-teal)}
+  /* Why */
+  .why{background:#f8fbfe}
+  .why-grid{display:grid;gap:36px}
+  @media(min-width:1024px){.why-grid{grid-template-columns:5fr 7fr;gap:60px}}
+  .quote-box{margin-top:24px;padding:20px;background:#fff;border:1px solid var(--rr-line);border-radius:16px}
+  @media(min-width:1024px){.quote-box{margin-top:32px;padding:24px}}
+  .why-cards{display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:640px){.why-cards{grid-template-columns:1fr 1fr;gap:20px}}
+  .why-card{padding:24px}
+  @media(min-width:1024px){.why-card{padding:28px}}
+  .why-card.full{grid-column:1/-1}
+  .why-icon{width:48px;height:48px;border-radius:12px;background:var(--rr-blue-soft);color:var(--rr-blue);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+  /* About */
+  .about{background:#fff;position:relative;overflow:hidden}
+  .about-grid{display:grid;gap:40px;align-items:start}
+  @media(min-width:1024px){.about-grid{grid-template-columns:minmax(0,380px) 1fr;gap:56px;align-items:start}}
+  .about-photo-wrap{position:relative;max-width:380px;margin:0 auto;width:100%}
+  @media(min-width:1024px){.about-photo-wrap{position:sticky;top:120px;align-self:start}}
+  .about-photo-glow{position:absolute;inset:-16px;border-radius:28px;background:linear-gradient(135deg,var(--rr-blue-soft),#fff,var(--rr-green-soft));filter:blur(40px);opacity:.8}
+  .about-photo-frame{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--rr-line);box-shadow:0 24px 50px -28px rgba(11,59,111,.4);aspect-ratio:1/1;background:#f4f7fb}
+  .about-photo-frame img{width:100%;height:100%;object-fit:cover}
+  .credentials-badge{position:absolute;left:-14px;bottom:18px;background:#fff;border:1px solid var(--rr-line);border-radius:14px;padding:12px 16px;box-shadow:0 18px 36px -18px rgba(11,59,111,.35);display:flex;align-items:center;gap:10px}
+  .credentials-badge .ic{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--rr-navy),var(--rr-teal));color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .credentials-badge .v{font-weight:700;font-size:12px;line-height:1.2}
+  .credentials-badge .l{font-size:10px;color:var(--rr-muted);text-transform:uppercase;letter-spacing:.08em;margin-top:2px}
+  .about-name{font-family:'Fraunces',serif;font-size:26px;line-height:1.1;margin:12px 0 4px;letter-spacing:-.02em}
+  @media(min-width:640px){.about-name{font-size:30px}}
+  @media(min-width:1024px){.about-name{font-size:34px;margin-top:0}}
+  .about-role{color:var(--rr-blue);font-weight:600;font-size:15px}
+  .about-creds{margin-top:6px;font-size:13px;color:var(--rr-muted);letter-spacing:.04em}
+  .about-bio{margin-top:16px;color:var(--rr-muted);font-size:15px;line-height:1.65}
+  .vm-grid{margin-top:24px;display:grid;gap:14px;grid-template-columns:1fr}
+  @media(min-width:640px){.vm-grid{grid-template-columns:1fr 1fr}}
+  .vm-card{padding:18px 20px;border-radius:14px;border:1px solid var(--rr-line);background:#fff;position:relative;overflow:hidden}
+  .vm-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,var(--rr-blue),var(--rr-teal))}
+  .vm-card.green::before{background:linear-gradient(180deg,var(--rr-teal),var(--rr-green))}
+  .vm-title{font-family:'Fraunces',serif;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--rr-navy);margin:0}
+  .vm-card.green .vm-title{color:var(--rr-green)}
+  .vm-text{margin:6px 0 0;font-size:13.5px;color:var(--rr-ink);line-height:1.55}
+  .values-row{margin-top:18px;display:grid;gap:12px;grid-template-columns:1fr}
+  @media(min-width:640px){.values-row{grid-template-columns:1fr 1fr}}
+  .value-item{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:12px;background:#f8fbfe;border:1px solid var(--rr-line)}
+  .value-item .vi-icon{width:34px;height:34px;border-radius:10px;background:#fff;border:1px solid var(--rr-line);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--rr-teal)}
+  .value-item .vi-title{font-weight:700;font-size:13.5px;margin:0}
+  .value-item .vi-text{margin:3px 0 0;font-size:12.5px;color:var(--rr-muted);line-height:1.5}
+  /* Process */
+  .proc-head{display:flex;flex-direction:column;gap:20px;align-items:flex-start}
+  @media(min-width:1024px){.proc-head{flex-direction:row;align-items:flex-end;justify-content:space-between}}
+  .proc-grid{margin-top:44px;display:grid;gap:18px;grid-template-columns:1fr;position:relative}
+  @media(min-width:768px){.proc-grid{margin-top:56px;gap:24px;grid-template-columns:1fr 1fr 1fr}}
+  .proc-card{position:relative;padding:24px}
+  @media(min-width:1024px){.proc-card{padding:28px}}
+  .proc-num{position:absolute;top:-14px;left:-14px;width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,var(--rr-navy),var(--rr-teal));color:#fff;font-family:'Fraunces',serif;font-weight:700;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 20px -8px rgba(11,59,111,.5)}
+  @media(min-width:1024px){.proc-num{top:-16px;left:-16px;width:48px;height:48px;border-radius:16px}}
+  .proc-icon{width:44px;height:44px;border-radius:12px;background:var(--rr-green-soft);color:var(--rr-green);display:flex;align-items:center;justify-content:center;margin:0 0 16px auto}
+  @media(min-width:1024px){.proc-icon{width:48px;height:48px;margin-bottom:20px}}
+  /* Testimonials */
+  .testi{background:linear-gradient(to bottom,#f8fbfe,#fff)}
+  .testi-grid{margin-top:36px;display:grid;gap:18px;grid-template-columns:1fr}
+  @media(min-width:768px){.testi-grid{margin-top:48px;gap:24px;grid-template-columns:1fr 1fr}}
+  .testi-card{padding:24px;position:relative}
+  @media(min-width:1024px){.testi-card{padding:32px}}
+  .testi-quote-icon{position:absolute;top:16px;right:16px;color:var(--rr-blue-soft);width:32px;height:32px}
+  @media(min-width:1024px){.testi-quote-icon{top:24px;right:24px;width:40px;height:40px}}
+  .testi-text{font-family:'Fraunces',serif;font-size:16px;line-height:1.5}
+  @media(min-width:1024px){.testi-text{font-size:18px}}
+  .testi-meta{margin-top:20px;display:flex;align-items:center;gap:12px}
+  .testi-avatar{width:44px;height:44px;border-radius:999px;background:linear-gradient(135deg,var(--rr-blue),var(--rr-teal));color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  /* Contact */
+  .contact-grid{display:grid;gap:36px}
+  @media(min-width:1024px){.contact-grid{grid-template-columns:5fr 7fr;gap:60px}}
+  .contact-row{display:flex;align-items:center;gap:14px;margin-top:16px}
+  @media(min-width:1024px){.contact-row{gap:16px;margin-top:20px}}
+  .contact-icon{width:44px;height:44px;border-radius:12px;background:#fff;border:1px solid var(--rr-line);display:flex;align-items:center;justify-content:center;transition:border-color .2s;flex-shrink:0}
+  @media(min-width:1024px){.contact-icon{width:48px;height:48px}}
+  .contact-row:hover .contact-icon{border-color:var(--rr-blue)}
+  .form-card{padding:22px}
+  @media(min-width:640px){.form-card{padding:28px}}
+  @media(min-width:1024px){.form-card{padding:36px}}
+  .form-grid{display:grid;gap:14px;grid-template-columns:1fr}
+  @media(min-width:640px){.form-grid{grid-template-columns:1fr 1fr;gap:16px}}
+  .col-span{grid-column:1/-1}
+  .msg-success{color:var(--rr-green);font-weight:600;display:none;align-items:center;gap:8px;margin-top:12px}
+  .msg-error{color:#dc2626;font-weight:600;display:none;margin-top:12px}
+  /* MSK Services Section */
+  .msk-grid{margin-top:40px;display:grid;gap:20px;grid-template-columns:1fr}
+  @media(min-width:768px){.msk-grid{grid-template-columns:1fr 1fr;gap:22px;margin-top:48px}}
+  @media(min-width:1024px){.msk-grid{grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}}
+  .msk-card{padding:0;overflow:hidden;display:flex;flex-direction:column;height:100%;position:relative}
+  .msk-thumb{position:relative;height:180px;overflow:hidden}
+  @media(min-width:1024px){.msk-thumb{height:200px}}
+  .msk-thumb svg.illu{position:absolute;inset:0;width:100%;height:100%;display:block}
+  .msk-thumb .badge{position:absolute;left:14px;top:14px;z-index:2;background:rgba(255,255,255,.95);color:var(--rr-navy);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+  .msk-body{padding:22px;display:flex;flex-direction:column;flex:1}
+  @media(min-width:1024px){.msk-body{padding:26px}}
+  .msk-card h3{font-family:'Fraunces',serif;font-size:22px;color:var(--rr-navy);margin:0 0 10px;line-height:1.2}
+  @media(min-width:1024px){.msk-card h3{font-size:24px}}
+  .msk-card p{margin:0;color:var(--rr-muted);font-size:14.5px;line-height:1.65}
+  .msk-includes{margin-top:18px;padding-top:16px;border-top:1px dashed var(--rr-line)}
+  .msk-includes-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--rr-teal);margin-bottom:8px}
+  .msk-tags{display:flex;flex-wrap:wrap;gap:6px}
+  .msk-tag{display:inline-flex;align-items:center;padding:5px 10px;border-radius:999px;background:var(--rr-blue-soft);color:var(--rr-navy);font-weight:600;font-size:12px}
+  /* Fees */
+  .fees-grid{margin-top:40px;display:grid;gap:18px;grid-template-columns:1fr}
+  @media(min-width:768px){.fees-grid{grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}}
+  @media(min-width:1024px){.fees-grid{gap:24px;margin-top:56px}}
+  .fee-card{position:relative;padding:28px 26px;background:#fff;border:1px solid var(--rr-line);border-radius:18px;display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+  .fee-card:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(11,59,111,.35);border-color:rgba(19,102,196,.35)}
+  .fee-card.featured{border:0;background:linear-gradient(155deg,#0b3b6f 0%,#1366c4 55%,#0aa192 100%);color:#fff;box-shadow:0 24px 50px -22px rgba(11,59,111,.45)}
+  .fee-card.featured .fee-duration{color:rgba(255,255,255,.85)}
+  .fee-card.featured .fee-type,.fee-card.featured .fee-price{color:#fff}
+  .fee-card.featured .fee-note{color:rgba(255,255,255,.92)}
+  .fee-badge{position:absolute;top:14px;right:14px;background:#fff;color:var(--rr-navy);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+  .fee-duration{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--rr-teal)}
+  .fee-type{margin-top:10px;font-family:'Fraunces',serif;font-size:22px;color:var(--rr-navy);line-height:1.2}
+  @media(min-width:1024px){.fee-type{font-size:24px}}
+  .fee-price{margin-top:14px;font-family:'Fraunces',serif;font-size:44px;font-weight:700;color:var(--rr-navy);line-height:1;letter-spacing:-.02em}
+  @media(min-width:1024px){.fee-price{font-size:52px}}
+  .fee-price small{font-size:18px;font-weight:600;color:inherit;opacity:.85;margin-left:2px}
+  .fee-note{margin-top:14px;font-size:13.5px;color:var(--rr-muted);line-height:1.6}
+  .fee-tiers{margin-top:18px;display:flex;flex-direction:column;gap:8px;padding:14px 16px;background:var(--rr-blue-soft);border-radius:12px}
+  .tier-row{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13.5px}
+  .tier-range{color:var(--rr-navy);font-weight:600}
+  .tier-price{font-family:'Fraunces',serif;font-weight:700;color:var(--rr-navy);font-size:16px}
+  .fees-foot{margin-top:28px;display:flex;flex-direction:column;gap:14px;justify-content:space-between;align-items:flex-start}
+  @media(min-width:768px){.fees-foot{flex-direction:row;align-items:center}}
+  .fees-foot p{margin:0;font-size:13px;color:var(--rr-muted)}
+  /* Scroll-to-top */
+  #to-top{position:fixed;right:16px;bottom:16px;width:46px;height:46px;border-radius:999px;background:linear-gradient(135deg,var(--rr-blue) 0%,var(--rr-teal) 100%);color:#fff;border:0;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 28px -10px rgba(19,102,196,.55);opacity:0;pointer-events:none;transition:opacity .25s ease,transform .25s ease;z-index:45}
+  #to-top.show{opacity:1;pointer-events:auto}
+  #to-top:hover{transform:translateY(-3px);filter:brightness(1.05)}
+  @media(min-width:768px){#to-top{right:24px;bottom:24px;width:52px;height:52px}}
+  /* Footer */
+  footer{border-top:1px solid var(--rr-line);padding:40px 0}
+  .footer-inner{display:flex;flex-direction:column;gap:20px;align-items:center;justify-content:space-between;text-align:center}
+  @media(min-width:640px){.footer-inner{flex-direction:row;text-align:left}}
+  .footer-brand{display:flex;align-items:center;gap:12px}
+  .footer-brand img{height:56px;width:auto;object-fit:contain}
+  /* Anim */
+  @keyframes floatUp{0%{opacity:0;transform:translateY(16px)}100%{opacity:1;transform:translateY(0)}}
+  .reveal{animation:floatUp .7s ease both}
+  .divider-spacer{height:24px}
+  .hidden{display:none}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="brand" aria-label="Rapid Rehab At Home">
+      <img src="rapid-rehab-emblem.png" alt="Rapid Rehab emblem" />
+      <div>
+        <div class="name gradient-text">Rapid Rehab</div>
+        <div class="sub">At Home</div>
+      </div>
+    </a>
+    <nav class="links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#msk-services">MSK</a>
+      <a href="#about">About</a>
+      <a href="#why">Why Home</a>
+      <a href="#process">Process</a>
+      <a href="#fees">Fees</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="https://wa.me/447590990814" target="_blank" rel="noopener" class="btn btn-primary call-btn" style="padding:10px 18px;font-size:14px">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>
+      WhatsApp
+    </a>
+    <button class="menu-btn" id="menu-open" aria-label="Open menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile nav drawer -->
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav-head">
+    <div class="brand">
+      <img src="rapid-rehab-emblem.png" alt="logo" />
+      <div>
+        <div class="name gradient-text">Rapid Rehab</div>
+        <div class="sub">At Home</div>
+      </div>
+    </div>
+    <button class="menu-btn" id="menu-close" aria-label="Close menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav-links">
+    <a href="#home" class="m-link">Home</a>
+    <a href="#services" class="m-link">Services</a>
+    <a href="#msk-services" class="m-link">MSK Services</a>
+    <a href="#about" class="m-link">About</a>
+    <a href="#why" class="m-link">Why Home</a>
+    <a href="#process" class="m-link">Process</a>
+    <a href="#fees" class="m-link">Fees</a>
+    <a href="#testimonials" class="m-link">Stories</a>
+    <a href="#contact" class="m-link">Contact</a>
+  </nav>
+  <div class="mobile-nav-cta">
+    <a href="https://wa.me/447590990814" target="_blank" rel="noopener" class="btn btn-primary">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>
+      WhatsApp Us
+    </a>
+    <a href="#contact" class="btn btn-outline m-link">Book a Consultation</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="home" class="hero bg-mesh">
+  <div class="container hero-grid">
+    <div>
+      <span class="chip" id="hero-eyebrow">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"/></svg>
+        Specialist Home Physiotherapy
+      </span>
+      <h1 class="hero-title">
+        <span id="hero-title-main">Bringing Expert Rehabilitation</span><br>
+        <span class="gradient-text" id="hero-title-accent">Directly to Your Doorstep</span>
+      </h1>
+      <p class="hero-sub" id="hero-sub">Hospital-grade neuro, ortho & elderly rehab — delivered where healing happens best: at home.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Schedule a Home Consultation
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#services" class="btn btn-outline">Explore Our Services</a>
+      </div>
+      <div class="hero-trust">
+        <span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1f9d6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+          HCPC-aligned therapists
+        </span>
+        <span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1f9d6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+          Same therapist, every visit
+        </span>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <div class="hero-img-glow"></div>
+      <div class="hero-img-card">
+        <img id="hero-img" class="hero-img" src="https://customer-assets.emergentagent.com/job_734d100e-920f-4f11-9271-78f16ba7d221/artifacts/uzrgpwzr_image%20%281%29.png" alt="Therapist supporting senior patient at home" />
+        <div class="hero-overlay"></div>
+        <div class="hero-controls">
+          <button class="hero-btn" id="hero-prev" aria-label="Previous slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div class="hero-dots" id="hero-dots"></div>
+          <button class="hero-btn" id="hero-next" aria-label="Next slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="float-card">
+        <div style="width:40px;height:40px;border-radius:999px;background:var(--rr-green-soft);display:flex;align-items:center;justify-content:center">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1f9d6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg>
+        </div>
+        <div>
+          <div style="font-weight:700;font-size:14px">1-on-1 Care</div>
+          <div style="font-size:12px;color:var(--rr-muted)">In your living room</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <span class="chip chip-green">Our Core Specialisms</span>
+    <h2 class="section-title">Three pathways. <span class="gradient-text">One trusted team.</span></h2>
+    <p class="section-sub" style="max-width:620px">Every programme begins with a face-to-face home assessment and ends when you've reclaimed what matters most.</p>
+    <div class="services-grid">
+      <article class="card svc-card">
+        <div class="svc-icon neuro">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-1.04Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-1.04Z"/></svg>
+        </div>
+        <h3 class="svc-title">Neurological Rehab</h3>
+        <p class="svc-conditions">Stroke · Parkinson's · MS · Brain/Spinal Cord Injuries</p>
+        <p class="svc-text">Neuro-plasticity focused exercises, balance training, gait retraining and upper-limb rehabilitation to rebuild real independence.</p>
+        <a href="#contact" class="svc-link">Discuss this pathway
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <article class="card svc-card">
+        <div class="svc-icon ortho">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z"/></svg>
+        </div>
+        <h3 class="svc-title">Orthopaedic Rehab</h3>
+        <p class="svc-conditions">Hip / Knee Replacements · Fractures · Spinal Surgery</p>
+        <p class="svc-text">Targeted strengthening, scar-tissue management, joint mobilisation and safe gait training to get you moving pain-free.</p>
+        <a href="#contact" class="svc-link">Discuss this pathway
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <article class="card svc-card">
+        <div class="svc-icon elderly">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg>
+        </div>
+        <h3 class="svc-title">Elderly Care & Mobility</h3>
+        <p class="svc-conditions">Frailty · Fall Prevention · Deconditioning · Chronic Joints</p>
+        <p class="svc-text">Confidence-building mobility drills, home safety assessments and strength training to maintain freedom & dignity.</p>
+        <a href="#contact" class="svc-link">Discuss this pathway
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ADDITIONAL SERVICES MSK -->
+<section id="msk-services" style="background:#f8fbfe">
+  <div class="container">
+    <span class="chip">Areas of Care · Musculoskeletal</span>
+    <h2 class="section-title">Additional <span class="gradient-text">MSK Services</span></h2>
+    <p class="section-sub" style="max-width:680px">Expert assessment and treatment across a broad range of musculoskeletal and post-operative conditions — every plan is evidence-based and tailored to your unique recovery goals.</p>
+
+    <div class="msk-grid">
+      <!-- Card 1 -->
+      <article class="card msk-card">
+        <div class="msk-thumb">
+          <svg class="illu" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="mg1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#0b3b6f"/><stop offset="100%" stop-color="#0aa192"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="200" fill="url(#mg1)"/>
+            <g stroke="#ffffff" stroke-width="2.5" fill="none" opacity=".95">
+              <path d="M200 20 C 220 40 180 60 200 80 C 220 100 180 120 200 140 C 215 160 195 180 200 195" />
+              <circle cx="200" cy="20" r="6" fill="#ffffff"/>
+              <line x1="180" y1="40" x2="220" y2="40"/><line x1="178" y1="60" x2="222" y2="60"/>
+              <line x1="178" y1="80" x2="222" y2="80"/><line x1="178" y1="100" x2="222" y2="100"/>
+              <line x1="178" y1="120" x2="222" y2="120"/><line x1="180" y1="140" x2="220" y2="140"/>
+              <line x1="184" y1="160" x2="216" y2="160"/>
+            </g>
+          </svg>
+          <span class="badge">01 · Spine &amp; Nerve</span>
+        </div>
+        <div class="msk-body">
+          <h3>Spine &amp; Nerve Care</h3>
+          <p>Comprehensive assessment and targeted rehabilitation for spinal and nerve-related conditions affecting movement and quality of life.</p>
+          <div class="msk-includes">
+            <div class="msk-includes-label">Includes</div>
+            <div class="msk-tags">
+              <span class="msk-tag">Sciatica</span>
+              <span class="msk-tag">Whiplash</span>
+              <span class="msk-tag">Chronic Neck/Back Pain</span>
+              <span class="msk-tag">Spinal Dysfunction</span>
+              <span class="msk-tag">Disc Issues</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card msk-card">
+        <div class="msk-thumb">
+          <svg class="illu" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="mg2" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#1366c4"/><stop offset="100%" stop-color="#0aa192"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="200" fill="url(#mg2)"/>
+            <g stroke="#ffffff" fill="none" stroke-width="2.5" opacity=".95">
+              <path d="M170 30 L170 90 Q170 105 185 110 L185 165 Q185 180 200 180 Q215 180 215 165 L215 110 Q230 105 230 90 L230 30" />
+              <ellipse cx="200" cy="100" rx="34" ry="14" fill="#ffffff" opacity=".25"/>
+              <circle cx="200" cy="100" r="6" fill="#ffffff"/>
+              <line x1="160" y1="100" x2="178" y2="100"/><line x1="222" y1="100" x2="240" y2="100"/>
+            </g>
+          </svg>
+          <span class="badge">02 · Orthopaedic</span>
+        </div>
+        <div class="msk-body">
+          <h3>Orthopaedic &amp; Post-Op Rehab</h3>
+          <p>Expert rehabilitation following joint surgery and orthopaedic procedures, safely restoring strength, range of motion and confidence.</p>
+          <div class="msk-includes">
+            <div class="msk-includes-label">Includes</div>
+            <div class="msk-tags">
+              <span class="msk-tag">Hip &amp; Knee Arthritis</span>
+              <span class="msk-tag">Post-Op Replacements</span>
+              <span class="msk-tag">Fractures</span>
+              <span class="msk-tag">Patellofemoral Pain</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card msk-card">
+        <div class="msk-thumb">
+          <svg class="illu" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="mg3" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#0aa192"/><stop offset="100%" stop-color="#1f9d6b"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="200" fill="url(#mg3)"/>
+            <g stroke="#ffffff" fill="none" stroke-width="2.5" stroke-linecap="round" opacity=".95">
+              <path d="M90 60 Q140 50 170 95 Q190 130 230 145" />
+              <circle cx="90" cy="60" r="7" fill="#ffffff"/>
+              <circle cx="170" cy="95" r="6" fill="#ffffff"/>
+              <circle cx="230" cy="145" r="7" fill="#ffffff"/>
+              <path d="M260 40 Q300 70 310 115 Q316 150 350 170" opacity=".85"/>
+              <circle cx="260" cy="40" r="5" fill="#ffffff"/>
+              <circle cx="310" cy="115" r="5" fill="#ffffff"/>
+              <circle cx="350" cy="170" r="6" fill="#ffffff"/>
+            </g>
+          </svg>
+          <span class="badge">03 · Limb Injuries</span>
+        </div>
+        <div class="msk-body">
+          <h3>Upper &amp; Lower Limb Injuries</h3>
+          <p>Targeted treatment for soft-tissue and joint injuries of the arms, shoulders, legs, ankles and feet — from acute to chronic.</p>
+          <div class="msk-includes">
+            <div class="msk-includes-label">Includes</div>
+            <div class="msk-tags">
+              <span class="msk-tag">Tennis Elbow</span>
+              <span class="msk-tag">Carpal Tunnel</span>
+              <span class="msk-tag">Achilles</span>
+              <span class="msk-tag">Plantar Fasciitis</span>
+              <span class="msk-tag">Rotator Cuff</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT US -->
+<section id="about" class="about">
+  <div class="container about-grid">
+    <div class="about-photo-wrap">
+      <div class="about-photo-glow"></div>
+      <div class="about-photo-frame">
+        <img src="https://customer-assets.emergentagent.com/job_home-visit-therapy/artifacts/0q9gb2ae_aboutarul.png" alt="Arul Kandan — Senior Consultant Physiotherapist" />
+      </div>
+      <div class="credentials-badge">
+        <div class="ic">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+        </div>
+        <div>
+          <div class="v">25+ Years Experience</div>
+          <div class="l">UK · Ireland · Malaysia · India</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <span class="chip">Who We Are</span>
+      <h2 class="about-name">Arul Kandan</h2>
+      <div class="about-role">Senior Consultant Physiotherapist</div>
+      <div class="about-creds">BPT · MSc · MCSP · HCPC (UK)</div>
+
+      <p class="about-bio">At <strong>Rapid Rehab At Home</strong>, we deliver premium home-based rehabilitation through a dedicated team of healthcare professionals led by Senior Consultant Physiotherapist <strong>Arul Kandan</strong>. With over 25 years of international clinical and leadership experience, Arul has led therapy departments and developed rehabilitation services across the United Kingdom, Ireland, Malaysia and India.</p>
+
+      <p class="about-bio">We were founded with a clear purpose: to make specialised, hospital-grade rehabilitation accessible in the comfort and safety of patients' homes. Through advanced, evidence-based programmes we bridge the gap between acute hospital care and long-term independence — turning familiar surroundings into the most effective environment for recovery.</p>
+
+      <div class="vm-grid">
+        <div class="vm-card">
+          <p class="vm-title">Our Vision</p>
+          <p class="vm-text">To redefine the standard of home-based rehabilitation — building a community where ageing, neurological conditions, injury or surgery never determine a person's independence or quality of life.</p>
+        </div>
+        <div class="vm-card green">
+          <p class="vm-title">Our Mission</p>
+          <p class="vm-text">To deliver highly specialised, compassionate and effective physiotherapy directly to our patients' doorsteps — accelerating recovery, restoring confidence and maximising physical independence.</p>
+        </div>
+      </div>
+
+      <div class="values-row">
+        <div class="value-item">
+          <div class="vi-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg>
+          </div>
+          <div>
+            <p class="vi-title">Compassionate Care</p>
+            <p class="vi-text">Every patient is treated with dignity, respect and empathy throughout their recovery.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="vi-icon" style="color:var(--rr-blue)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <div>
+            <p class="vi-title">Clinical Excellence</p>
+            <p class="vi-text">Evidence-based, hospital-grade techniques delivered in your home.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="vi-icon" style="color:var(--rr-green)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.5.5 0 0 1-.96 0L10.29 3.5a.5.5 0 0 0-.96 0l-1.93 6.84A2 2 0 0 1 5.48 12H2"/></svg>
+          </div>
+          <div>
+            <p class="vi-title">Proactive Outcomes</p>
+            <p class="vi-text">Focused on meaningful function, fall prevention and quality of life.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="vi-icon" style="color:var(--rr-navy)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <p class="vi-title">Collaborative Teamwork</p>
+            <p class="vi-text">A seamless approach with patients, families and healthcare professionals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY HOME -->
+<section id="why" class="why">
+  <div class="container why-grid">
+    <div>
+      <span class="chip">Why Home-Based Rehab</span>
+      <h2 class="section-title">The best place to relearn how to live your life is <span class="gradient-text">where you actually live it.</span></h2>
+      <div class="quote-box">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0aa192" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+        <p style="margin:12px 0 0;font-size:16px;line-height:1.6">Clinics teach you to walk on flat polished floors. We teach you to walk on the rug between your sofa and kitchen — the journey that matters most.</p>
+      </div>
+    </div>
+    <div class="why-cards">
+      <div class="card why-card">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.5.5 0 0 1-.96 0L10.29 3.5a.5.5 0 0 0-.96 0l-1.93 6.84A2 2 0 0 1 5.48 12H2"/></svg>
+        </div>
+        <h3 class="font-display" style="font-size:22px;margin:0">Real-World Progress</h3>
+        <p class="svc-text">Practice climbing your stairs, navigating your kitchen, getting in and out of your bed — the goals that actually matter.</p>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+        </div>
+        <h3 class="font-display" style="font-size:22px;margin:0">Zero Travel Stress</h3>
+        <p class="svc-text">No painful car journeys, no waiting rooms. Every session begins the moment your therapist arrives.</p>
+      </div>
+      <div class="card why-card full">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3 class="font-display" style="font-size:22px;margin:0">Family-Centred Care</h3>
+        <p class="svc-text">Your loved ones are coached alongside you — building a confident, capable support team at home.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="container">
+    <div class="proc-head">
+      <div style="max-width:620px">
+        <span class="chip chip-green">How It Works</span>
+        <h2 class="section-title">From first call to <span class="gradient-text">first steps</span> — in days, not weeks.</h2>
+      </div>
+      <div style="display:inline-flex;align-items:center;gap:8px;color:var(--rr-muted);font-size:14px">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Most assessments booked within 48 hours
+      </div>
+    </div>
+    <div class="proc-grid">
+      <div class="card proc-card">
+        <div class="proc-num">01</div>
+        <div class="proc-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></svg>
+        </div>
+        <h3 class="font-display" style="font-size:22px;margin:0">Initial Home Assessment</h3>
+        <p class="svc-text">A specialist visits, reviews your medical history, environment and goals — no obligation.</p>
+      </div>
+      <div class="card proc-card">
+        <div class="proc-num">02</div>
+        <div class="proc-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+        </div>
+        <h3 class="font-display" style="font-size:22px;margin:0">Your Bespoke Rehab Plan</h3>
+        <p class="svc-text">We design a personalised programme aligned to your pace, your home and your priorities.</p>
+      </div>
+      <div class="card proc-card">
+        <div class="proc-num">03</div>
+        <div class="proc-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.5.5 0 0 1-.96 0L10.29 3.5a.5.5 0 0 0-.96 0l-1.93 6.84A2 2 0 0 1 5.48 12H2"/></svg>
+        </div>
+        <h3 class="font-display" style="font-size:22px;margin:0">Dedicated Therapy Sessions</h3>
+        <p class="svc-text">Consistent, focused sessions with progress reviews — same therapist, every visit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testi">
+  <div class="container">
+    <span class="chip">Patient Stories</span>
+    <h2 class="section-title">Real lives. <span class="gradient-text">Real recoveries.</span></h2>
+    <div class="testi-grid">
+      <article class="card testi-card">
+        <svg class="testi-quote-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/></svg>
+        <p class="testi-text">"After my stroke, I thought I'd never walk independently again. Having a neuro-specialist come to my house changed everything."</p>
+        <div class="testi-meta">
+          <div class="testi-avatar">M</div>
+          <div>
+            <div style="font-weight:700">Margaret T.</div>
+            <div style="font-size:12px;color:var(--rr-muted)">Neurological Rehab Patient</div>
+          </div>
+        </div>
+      </article>
+      <article class="card testi-card">
+        <svg class="testi-quote-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/></svg>
+        <p class="testi-text">"Getting to a clinic after my total knee replacement was impossible. The orthopaedic rehab I received at home got me back to gardening weeks ahead of schedule."</p>
+        <div class="testi-meta">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#0aa192,#1f9d6b)">J</div>
+          <div>
+            <div style="font-weight:700">James L.</div>
+            <div style="font-size:12px;color:var(--rr-muted)">Orthopaedic Patient</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FEES -->
+<section id="fees" style="background:#f8fbfe">
+  <div class="container">
+    <span class="chip chip-green">Transparent Pricing</span>
+    <h2 class="section-title">Clear &amp; Fair <span class="gradient-text">Fee Structure</span></h2>
+    <p class="section-sub" style="max-width:680px">Straightforward pricing with no hidden charges — choose the appointment type that suits your needs and schedule.</p>
+
+    <div class="fees-grid">
+      <div class="fee-card">
+        <div class="fee-duration">In-Clinic · 30 Minutes</div>
+        <div class="fee-type">Standard Appointment</div>
+        <div class="fee-price">£50</div>
+        <div class="fee-note">Assessment, treatment and home exercise advice. Ideal for follow-up sessions.</div>
+      </div>
+
+      <div class="fee-card featured">
+        <span class="fee-badge">Most Popular</span>
+        <div class="fee-duration">In-Clinic · 45 Minutes</div>
+        <div class="fee-type">Extended Appointment</div>
+        <div class="fee-price">£60</div>
+        <div class="fee-note">Recommended for initial assessments or complex conditions requiring detailed evaluation.</div>
+      </div>
+
+      <div class="fee-card">
+        <div class="fee-duration">Home Visit · 45–60 Minutes</div>
+        <div class="fee-type">Specialist Home Visit</div>
+        <div class="fee-price">£80<small>+</small></div>
+        <div class="fee-tiers">
+          <div class="tier-row"><span class="tier-range">Up to 30 miles</span><span class="tier-price">£80</span></div>
+          <div class="tier-row"><span class="tier-range">30 – 50 miles</span><span class="tier-price">£100</span></div>
+          <div class="tier-row"><span class="tier-range">50 – 70 miles</span><span class="tier-price">£120</span></div>
+        </div>
+        <div class="fee-note">Travel distance measured from Gloucester. Coverage includes Cheltenham, Tewkesbury, Forest of Dean, Stroud &amp; Cotswold.</div>
+      </div>
+    </div>
+
+    <div class="fees-foot">
+      <p>Card, bank transfer &amp; cash accepted · Detailed receipts provided for insurance claims</p>
+      <a href="#contact" class="btn btn-outline" style="padding:11px 22px;font-size:14px">Book an Appointment</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-mesh">
+  <div class="container contact-grid">
+    <div>
+      <span class="chip chip-green">Ready to Take the First Step?</span>
+      <h2 class="section-title">Speak to a specialist — <span class="gradient-text">not a call centre.</span></h2>
+      <p class="section-sub" style="max-width:480px">Fill in the form and a senior physiotherapist will call you back, usually within the same day. No pressure, no obligation.</p>
+
+      <a href="https://wa.me/447590990814" target="_blank" rel="noopener" class="contact-row">
+        <div class="contact-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#1f9d6b"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--rr-muted)">Call or WhatsApp</div>
+          <div style="font-weight:700;font-size:17px">07590 990814</div>
+        </div>
+      </a>
+      <a href="/cdn-cgi/l/email-protection#cba2a5ada48bbba3b2b8a2a4b9aea3aaa9bea0e5a8a4a6" class="contact-row">
+        <div class="contact-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0aa192" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--rr-muted)">Email</div>
+          <div style="font-weight:700;font-size:17px;word-break:break-all"><span class="__cf_email__" data-cfemail="99f0f7fff6d9e9f1e0eaf0f6ebfcf1f8fbecf2b7faf6f4">[email&#160;protected]</span></div>
+        </div>
+      </a>
+      <div class="contact-row">
+        <div class="contact-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1366c4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--rr-muted)">Clinic Address</div>
+          <div style="font-weight:700;font-size:15px;line-height:1.45">Allied Health Physiotherapy<br>1 Broad Leys Road, Barnwood<br>Gloucester, GL4 3YW</div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1f9d6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--rr-muted)">Home Visit Coverage</div>
+          <div style="font-weight:700;font-size:15px">Gloucester &amp; Cheltenham area</div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0b3b6f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--rr-muted)">Opening Hours</div>
+          <div style="font-weight:700;font-size:15px">Monday – Saturday · 9:00 AM – 8:00 PM</div>
+        </div>
+      </div>
+    </div>
+    <div class="card form-card">
+      <form id="booking-form" action="https://formsubmit.co/info@physiorehabuk.com" method="POST">
+        <input type="hidden" name="_subject" value="New Home Consultation Request — Rapid Rehab At Home" />
+        <input type="hidden" name="_captcha" value="false" />
+        <div class="form-grid">
+          <div>
+            <label class="label">Full Name *</label>
+            <input class="input" name="name" required placeholder="Jane Doe" />
+          </div>
+          <div>
+            <label class="label">Phone *</label>
+            <input class="input" name="phone" required placeholder="+44 ..." />
+          </div>
+          <div>
+            <label class="label">Email</label>
+            <input class="input" type="email" name="email" placeholder="you@example.com" />
+          </div>
+          <div>
+            <label class="label">Service Needed *</label>
+            <select class="input" name="service" required>
+              <option>Neurological Rehab</option>
+              <option>Orthopaedic Rehab</option>
+              <option>Elderly Care & Mobility</option>
+              <option>Not sure — please advise</option>
+            </select>
+          </div>
+          <div class="col-span">
+            <label class="label">City / Postcode</label>
+            <input class="input" name="city" placeholder="e.g. London SW1" />
+          </div>
+          <div class="col-span">
+            <label class="label">Tell us briefly about the patient</label>
+            <textarea class="input" rows="4" name="message" placeholder="Recent stroke, post-op knee, fall last month..."></textarea>
+          </div>
+          <div class="col-span">
+            <button type="submit" class="btn btn-primary">Book Free 15-min Consultation
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <div class="msg-success" id="msg-success">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              Thank you — we'll call you back shortly.
+            </div>
+            <div class="msg-error" id="msg-error">Could not submit. Please call us instead.</div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="rapid-rehab-emblem.png" alt="logo" />
+      <div>
+        <div class="font-display gradient-text" style="font-weight:700;font-size:18px">Rapid Rehab At Home</div>
+        <div style="font-size:12px;color:var(--rr-muted)">Specialised Neuro, Ortho & Elderly Rehab</div>
+      </div>
+    </div>
+    <p style="font-size:12px;color:var(--rr-muted);margin:0">© <span id="year"></span> Rapid Rehab At Home. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<button id="to-top" aria-label="Scroll to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Hero carousel
+  const slides = [
+    {
+      img: "https://customer-assets.emergentagent.com/job_734d100e-920f-4f11-9271-78f16ba7d221/artifacts/uzrgpwzr_image%20%281%29.png",
+      eyebrow: "Specialist Home Physiotherapy",
+      titleMain: "Bringing Expert Rehabilitation",
+      titleAccent: "Directly to Your Doorstep",
+      sub: "Hospital-grade neuro, ortho & elderly rehab — delivered where healing happens best: at home."
+    },
+    {
+      img: "https://customer-assets.emergentagent.com/job_734d100e-920f-4f11-9271-78f16ba7d221/artifacts/3qcemj5j_image%20%282%29.png",
+      eyebrow: "Elderly Care & Mobility",
+      titleMain: "Reclaim Your Independence,",
+      titleAccent: "Comfortably at Home",
+      sub: "Fall-prevention, strength & confidence-building programmes designed for your living space."
+    }
+  ];
+  let idx = 0;
+  const heroImg = document.getElementById('hero-img');
+  const heroEyebrow = document.getElementById('hero-eyebrow');
+  const titleMain = document.getElementById('hero-title-main');
+  const titleAccent = document.getElementById('hero-title-accent');
+  const heroSub = document.getElementById('hero-sub');
+  const dotsEl = document.getElementById('hero-dots');
+
+  function renderDots(){
+    dotsEl.innerHTML = '';
+    slides.forEach((_,i)=>{
+      const b = document.createElement('button');
+      b.className = 'hero-dot' + (i===idx?' active':'');
+      b.setAttribute('aria-label','Go to slide '+(i+1));
+      b.addEventListener('click', ()=>{ idx=i; render(); });
+      dotsEl.appendChild(b);
+    });
+  }
+  function render(){
+    const s = slides[idx];
+    heroImg.src = s.img;
+    heroEyebrow.lastChild.textContent = ' ' + s.eyebrow;
+    titleMain.textContent = s.titleMain;
+    titleAccent.textContent = s.titleAccent;
+    heroSub.textContent = s.sub;
+    renderDots();
+  }
+  document.getElementById('hero-prev').addEventListener('click', ()=>{ idx = (idx - 1 + slides.length) % slides.length; render(); });
+  document.getElementById('hero-next').addEventListener('click', ()=>{ idx = (idx + 1) % slides.length; render(); });
+  setInterval(()=>{ idx = (idx + 1) % slides.length; render(); }, 6500);
+  renderDots();
+
+  // Scrollspy — highlight current section in nav
+  const sectionIds = ['home','services','msk-services','about','why','process','fees','contact'];
+  const navLinks = Array.from(document.querySelectorAll('header.nav nav.links a, .mobile-nav-links a'));
+  function findLinksByHash(hash){
+    return navLinks.filter(a => a.getAttribute('href') === '#' + hash);
+  }
+  function setActiveSection(id){
+    navLinks.forEach(a => a.classList.remove('active-nav'));
+    findLinksByHash(id).forEach(a => a.classList.add('active-nav'));
+  }
+  function onScrollSpy(){
+    const offset = 140; // header height + a bit of breathing room
+    const y = window.scrollY + offset;
+    let current = sectionIds[0];
+    for (const id of sectionIds) {
+      const el = document.getElementById(id);
+      if (el && el.offsetTop <= y) current = id;
+    }
+    // Near the very bottom -> highlight last (contact)
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 60) {
+      current = sectionIds[sectionIds.length - 1];
+    }
+    setActiveSection(current);
+  }
+  window.addEventListener('scroll', onScrollSpy, { passive: true });
+  window.addEventListener('load', onScrollSpy);
+
+  // Scroll to top
+  const toTop = document.getElementById('to-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) toTop.classList.add('show');
+    else toTop.classList.remove('show');
+  });
+  toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // Mobile menu toggle
+  const mobileNav = document.getElementById('mobile-nav');
+  document.getElementById('menu-open').addEventListener('click', () => {
+    mobileNav.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+  const closeMobile = () => { mobileNav.classList.remove('open'); document.body.style.overflow = ''; };
+  document.getElementById('menu-close').addEventListener('click', closeMobile);
+  document.querySelectorAll('.m-link').forEach(l => l.addEventListener('click', closeMobile));
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const id = a.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+
+  // Form submit — uses FormSubmit.co (no backend needed). On success, show inline message.
+  const form = document.getElementById('booking-form');
+  const successEl = document.getElementById('msg-success');
+  const errorEl = document.getElementById('msg-error');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    successEl.style.display = 'none';
+    errorEl.style.display = 'none';
+    try {
+      const fd = new FormData(form);
+      const res = await fetch(form.action, { method: 'POST', body: fd, headers: { 'Accept': 'application/json' }});
+      if (res.ok) {
+        form.reset();
+        successEl.style.display = 'inline-flex';
+      } else {
+        errorEl.style.display = 'block';
+      }
+    } catch (err) {
+      errorEl.style.display = 'block';
+    }
+  });
+</script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"7f7b0fd8732c4326aae4b9d58d5c514a","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
